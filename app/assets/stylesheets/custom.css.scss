@@ -1,13 +1,33 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-.navbar {
-  background-color: #FDF6EA !important;
-}
-  
-.navbar-brand {
-  font-size: 3rem;
+#logo {
+  float: left;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
-h1 {
-  color: red;
+#home-container {
+  margin-top: 25px;
+}
+
+#home-jumbo {
+  background-image: asset_url('ab_typewriter.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+html, body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgray;
+}
+
+#sticky-footer {
+  flex-shrink: none;
 }
