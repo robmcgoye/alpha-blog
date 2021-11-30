@@ -22,4 +22,10 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+    host: localhost
+    adapter: postgresql
+    database: alphablog_production
+    pool: 5
+    username: <%= ENV['ALPHABLOG_DATABASE_USER'] %>
+    password: <%= ENV['ALPHABLOG_DATABASE_PASSWORD'] %>
+
