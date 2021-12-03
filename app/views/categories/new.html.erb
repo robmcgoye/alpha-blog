@@ -1,3 +1,7 @@
 <h1 class="text-center mt-3">Create new category</h1>
-
-<%= render 'form' %>
+<div class="container">
+  <%= render 'form' %>
+  <div class="mb-3 text-center">
+    <%= link_to '[ Cancel and return to categories listing ]', categories_path, class: "link-info" %>
+  </div>
+</div>
