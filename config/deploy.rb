@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.16.0"
 
-set :application, "alph-blog"
+set :application, "alpha-blog"
 set :repo_url, "git@github.com:robmcgoye/alpha-blog.git"
 
 # Default branch is :master
