@@ -23,8 +23,8 @@ test:
 production:
     host: localhost
     adapter: postgresql
-    database: alphablog_production
+    database: alphablog
     pool: 5
-    username: <%= ENV['ALPHABLOG_DATABASE_USER'] %>
-    password: <%= ENV['ALPHABLOG_DATABASE_PASSWORD'] %>
+    username: Rails.application.credentials.db_credentials[:username]
+    password: Rails.application.credentials.db_credentials[:password]
 
